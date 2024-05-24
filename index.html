@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Shopping</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="p-6 bg-gray-400 ">
+		<!-- Shopping -->
+		<section>
+			<h1 class="text-center m-10 text-4xl ">Shopping Cart</h1>
+		</section>
+		<!-- Add Item -->
+		<section class="flex-col">
+			<h1 class=" m-2 text-2xl ">Add Item For Selection</h1>
+			<form
+				id="form"
+				class="flex p-1 w-auto m-2 bg-white font-semibold text-xl rounded-lg shadow-md"
+			>
+				<div class="flex  ">
+					<label
+						for="imageCaption"
+						class="block mb-2 content-center m-3 text-gray-700 font-bold "
+					>Product Name:</label>
+					<input
+						type="text"
+						name="imageCaption"
+						id="imageCaption"
+
+						class=" border-gray-300 border rounded-md "
+					/>
+				</div>
+
+				<div class="flex">
+					<label
+						for="imageCaption2"
+						class="block mb-2 m-3 content-center text-gray-700 font-bold "
+					>Price:</label>
+					<input
+						type="number"
+						name="imageCaption2"
+						id="imageCaption2"
+						required
+						min="1"
+						class=" border border-gray-300 rounded-md"
+					/>
+				</div>
+
+				<div class="flex mx-2">
+					<label
+						for="imageFile"
+						class=" text-gray-700 font-bold "
+						>Image URL:</label>
+					<input
+						type="url"
+						name="imageURL"
+						id="imageURL"
+						required
+						class="w-full px-3 py-2 border border-gray-300 rounded-md"
+					/>
+				</div>
+				
+				<div class="flex-col content-center m-2 ">
+					<button
+						type="submit"
+						class="px-2 h-10 bg-blue-500 text-white rounded-md hover:bg-blue-600 hover:ring hover:ring-blue-300 "
+					>
+						Create Product
+					</button>
+					
+				</div>
+
+			</form>
+			<p
+			id="errorMessage"
+			class="text-red-500 mb-4"
+			></p>
+		</section>
+		<!-- Display -->
+		<section
+			id="displaySection"
+			class=" m-2 p-2 bg-white min-h-60 rounded-md "
+		>
+		</section>
+		<button class="px-2 h-10 bg-blue-500 text-white rounded-md hover:bg-blue-600 hover:ring hover:ring-blue-300 "
+				Id="AddToCart">Add to Cart</button>
+		<!-- Display2 -->
+		<section
+			id="displaySection2"
+			class=" m-2 p-2 bg-white min-h-60 rounded-md "
+		>
+			
+		</section>
+		<button class="px-2 h-10 bg-blue-500 text-white rounded-md hover:bg-blue-600 hover:ring hover:ring-blue-300 "
+				Id="Cal"
+				onclick="calculate()">Calculate Final Price</button>
+		<!-- Display3 -->
+		<section
+			id="displaySection3"
+			class=" m-2 bg-white min-h-20 rounded-md text-3xl"
+		>
+			You have to pay : 
+		</section>
+		<!-- Display4 (secret) -->
+		<section id="testMaster">
+
+		</section>
+		<script src="script2.js"></script>
+
+	</body>
+</html>
